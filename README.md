@@ -1,25 +1,25 @@
 
 
-#### Kidnapped Vehicle Localization Using Particle Filter
+# Kidnapped Vehicle Localization Using Particle Filter
 This Project aims to use the powerful tool of particle filter and with the help of a vehicle surrounding landmarks to estimate its 2D position with high accuracy. The vehicle uses GPS estimates as initial position. The project code is done in C++ and it requires the Self Driving Car Simulator for it to run. 
 
-## Project Solution Method in Steps
+# Project Solution Method in Steps
 
 The main code of this project is found in 'src' folder and in 'particle_filter.cpp'. The following steps can summarize how this filter works:- 
 
-# Initilization. 
+## Initilization. 
 This step is done using the initialization function , in which it initilizes the number of particles as well as their first position according to the GPS location with gaussian distribution. 
 
-# Prediction of the particles 
+## Prediction of the particles 
 A prediction function is used in order to predict the position of the particles in the next time step based on previous position, velocity, yaw rate and heading. A random noise is added to this prediction step. 
 
-# Updating Weights of the Particles
+## Updating Weights of the Particles
 This includes the transformation of observation points from the vehicle coordinates to the map coordinates. Then the closest neighbor algorthim is used to find the nearest particle to each landmark. Then calculating weights for each mapped observation, and finally calculating the multi-variate Guassian distribution. 
 
-# Resampling of particles. 
+## Resampling of particles. 
 The particles are resampled based on the probability corrosponding to their weights distribution. 
 
-# Finding the Opitimal Particle Number. 
+## Finding the Opitimal Particle Number. 
 
 * Particle Number: 20 , Error in Pos and Heading: (.142, .123, .004) System Time: 19 seconds
 
