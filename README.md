@@ -27,7 +27,7 @@ The particles are resampled based on the probability corrosponding to their weig
 
 * Particle Number: 100 , Error in Pos and Heading: (.117, .106, .004) System Time: 71 seconds
 
-* Particle Number: 125 , Error in Pos and Heading: (.113, .105, .004) System Time: 70 seconds
+* Particle Number: 125 , Error in Pos and Heading: (.111, .107, .004) System Time: 68 seconds
 
 * Particle Number: 150 , Error in Pos and Heading: (.110, .105, .004) System Time: 82 seconds
 
