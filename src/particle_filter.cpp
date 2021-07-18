@@ -41,7 +41,7 @@ void ParticleFilter::init(double x, double y, double theta, double std[]) {
 if(is_initialized){
   return;
 }
-  num_particles = 200;  // TODO: Set the number of particles
+  num_particles = 100;  // TODO: Set the number of particles
 
   // Set the Standard deviations of position and heading 
   double std_x = std[0];
@@ -93,8 +93,8 @@ void ParticleFilter::prediction(double delta_t, double std_pos[],
  for (int i = 0; i < num_particles; ++i) {
     double theta = particles[i].theta;
 // I added a small number to the yaw rate to avoid dividing by zero 
-      particles[i].x += velocity / (yaw_rate+0.0001) * (sin(theta + yaw_rate * delta_t) - sin(theta)) + dist_x(gen);
-      particles[i].y += velocity / (yaw_rate+0.0001) * (cos(theta) - cos(theta + yaw_rate * delta_t)) +dist_y(gen);
+      particles[i].x += velocity / (yaw_rate+0.000001) * (sin(theta + yaw_rate * delta_t) - sin(theta)) + dist_x(gen);
+      particles[i].y += velocity / (yaw_rate+0.000001) * (cos(theta) - cos(theta + yaw_rate * delta_t)) +dist_y(gen);
       particles[i].theta += yaw_rate * delta_t + dist_theta(gen);
 
 
@@ -257,9 +257,7 @@ void ParticleFilter::resample() {
 
   double beta = 0.0;
 
-
-
-  // Get weights and max weight.
+  // Getting the weights max. 
   vector<double> weights;
   double maxWeight = numeric_limits<double>::min();
   for (int i = 0; i < num_particles; i++) {
@@ -269,10 +267,10 @@ void ParticleFilter::resample() {
     }
   }
 
-  // Creating distributions.
+  // Creating uniform real distributions
   uniform_real_distribution<double> distDouble(0.0, maxWeight);
 
-  // the wheel
+  // Finding the Resampled Particles
   vector<Particle> resampledParticles;
   for (int i = 0; i < num_particles; i++) {
     beta += distDouble(gen) * 2.0;
