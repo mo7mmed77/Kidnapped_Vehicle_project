@@ -21,11 +21,15 @@ The particles are resampled based on the corrosponding weights distribution.
 
 # Finding the Opitimal Particle Number. 
 
-Particle Number: 20 , Error in Pos and Heading: (.142, .123, .004) System Time: 19 seconds
-Particle Number: 50 , Error in Pos and Heading: (.124, .114, .004) System Time: 19.5 seconds
-Particle Number: 100 , Error in Pos and Heading: (.113, .109, .004) System Time: 26 seconds
-Particle Number: 200 , Error in Pos and Heading: (.113, .106, .003) System Time: 42 seconds
-Particle Number: 500 , Error in Pos and Heading: (.112, .106, .004) System Time: 69 seconds
+* Particle Number: 20 , Error in Pos and Heading: (.142, .123, .004) System Time: 19 seconds
+
+* Particle Number: 50 , Error in Pos and Heading: (.124, .114, .004) System Time: 19.5 seconds
+
+* Particle Number: 100 , Error in Pos and Heading: (.113, .109, .004) System Time: 26 seconds
+
+* Particle Number: 200 , Error in Pos and Heading: (.113, .106, .003) System Time: 42 seconds
+
+* Particle Number: 500 , Error in Pos and Heading: (.112, .106, .004) System Time: 69 seconds
 
 Based on the above tests all the time were done within 100 seconds (based on performance criteria. However, 100 particles seems to be the optimal number. it gives good accuracy while running relatively fast compared to the 200 and 500. Moreover, the increase of particle numbers did not give a significant increase in accuracy after 100. 
 
