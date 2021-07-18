@@ -38,7 +38,7 @@ The particles are resampled based on the probability corrosponding to their weig
 
 Based on the above tests all the time were done within 100 seconds (based on performance criteria. However, 125 particles seems to be the optimal number. it gives good accuracy while running relatively fast compared to the 150, 175 and 200. Moreover, the increase of particle numbers did not give a significant increase in accuracy after 125. Although in some cases we can see the opposite, (increase in error while increasing particle filter), this could be due to the small random errors. I don't think there's anything we can do about it. 
 
-![Alt text](Images/Final_results.pngraw=true "Title")
+![Alt text](Images/Final_result.png)
 
 
 ## Running the Code
