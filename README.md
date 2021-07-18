@@ -21,9 +21,9 @@ The particles are resampled based on the probability corrosponding to their weig
 
 ## Finding the Opitimal Particle Number. 
 
-* Particle Number: 20 , Error in Pos and Heading: (.142, .123, .004) System Time: 19 seconds
+* Particle Number: 20 , Error in Pos and Heading: (.140, .128, .004) System Time: 49 seconds
 
-* Particle Number: 50 , Error in Pos and Heading: (.124, .114, .004) System Time: 19.5 seconds
+* Particle Number: 50 , Error in Pos and Heading: (.122, .113, .004) System Time: 52 seconds
 
 * Particle Number: 100 , Error in Pos and Heading: (.117, .106, .004) System Time: 71 seconds
 
