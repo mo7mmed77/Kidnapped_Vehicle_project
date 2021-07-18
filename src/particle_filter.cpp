@@ -41,7 +41,7 @@ void ParticleFilter::init(double x, double y, double theta, double std[]) {
 if(is_initialized){
   return;
 }
-  num_particles = 100;  // TODO: Set the number of particles
+  num_particles = 125;  // TODO: Set the number of particles
 
   // Set the Standard deviations of position and heading 
   double std_x = std[0];
