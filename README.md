@@ -21,13 +21,13 @@ The particles are resampled based on the probability corrosponding to their weig
 
 ## Finding the Opitimal Particle Number. 
 
-* Particle Number: 20 , Error in Pos and Heading: (.142, .123, .004) System Time: 19 seconds
+* Particle Number: 20 , Error in Pos and Heading: (.140, .128, .004) System Time: 49 seconds
 
-* Particle Number: 50 , Error in Pos and Heading: (.124, .114, .004) System Time: 19.5 seconds
+* Particle Number: 50 , Error in Pos and Heading: (.122, .113, .004) System Time: 52 seconds
 
 * Particle Number: 100 , Error in Pos and Heading: (.117, .106, .004) System Time: 71 seconds
 
-* Particle Number: 125 , Error in Pos and Heading: (.113, .105, .004) System Time: 70 seconds
+* Particle Number: 125 , Error in Pos and Heading: (.111, .107, .004) System Time: 68 seconds
 
 * Particle Number: 150 , Error in Pos and Heading: (.110, .105, .004) System Time: 82 seconds
 
@@ -37,6 +37,8 @@ The particles are resampled based on the probability corrosponding to their weig
 
 
 Based on the above tests all the time were done within 100 seconds (based on performance criteria. However, 125 particles seems to be the optimal number. it gives good accuracy while running relatively fast compared to the 150, 175 and 200. Moreover, the increase of particle numbers did not give a significant increase in accuracy after 125. Although in some cases we can see the opposite, (increase in error while increasing particle filter), this could be due to the small random errors. I don't think there's anything we can do about it. 
+
+![Alt text](Images/Final_result.png)
 
 
 ## Running the Code
